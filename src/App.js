@@ -1,5 +1,7 @@
 import React from "react";
 import SetUp from "./tutorial/11-react-router/final"
+import Router1 from "./tutorial/11-react-router/Router1/Router1"
+import RouteConfigExample from "./tutorial/11-react-router/Router2/Router2"
 // import UseState5 from "./tutorial/1-useState/setup/5-useState-counter";
 // import SetUp from "./tutorial/12-memo-useMemo-useCallback/setup";
 
@@ -19,6 +21,9 @@ function App() {
     <>
       <div className="container">
         <SetUp />
+        <Router1 />
+       {/*<RouteConfigExample /> */} 
+       <RouteConfigExample />
       </div>
     </>
   );
