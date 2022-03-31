@@ -1,7 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from "react";
 
 const Modal = () => {
-  return <div>i'm modal</div>;
+  useEffect(() => {
+    setTimeout(() => closeModal(), 3000);
+  });
+  const { modalContent, closeModal } = useContext(ItemContext);
+  return (
+    <div className="modal">
+      <p>{modalContent}</p>
+    </div>
+  );
 };
 
 export default Modal;
